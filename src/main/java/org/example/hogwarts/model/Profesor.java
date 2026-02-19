@@ -32,5 +32,45 @@ public class Profesor {
     @OneToOne
     @JoinColumn(name = "asignatura_id")
     private Asignatura asignatura;
+
+    public Asignatura getAsignatura() {
+        return asignatura;
+    }
+
+    public Casa getCasa() {
+        return casa;
+    }
+
+    public LocalDate getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setAsignatura(Asignatura asignatura) {
+        this.asignatura = asignatura;
+    }
+
+    public void setCasa(Casa casa) {
+        this.casa = casa;
+    }
+
+    public void setFechaInicio(LocalDate fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 }
 
