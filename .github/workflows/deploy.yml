@@ -72,5 +72,5 @@ jobs:
           environment_name: HogwartsAPI-env
           version_label: "HogwartsAPI-v-${{ github.run_number }}"
           deployment_package: docker-compose.yml
-          bucket_name: elasticbeanstalk-us-east-1-179718672800
+          existing_bucket_name: elasticbeanstalk-us-east-1-179718672800
           wait_for_deployment: true
