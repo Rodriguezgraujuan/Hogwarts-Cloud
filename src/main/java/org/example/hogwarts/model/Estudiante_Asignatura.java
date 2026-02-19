@@ -7,6 +7,8 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class Estudiante_Asignatura {
 
     @Id
