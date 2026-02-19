@@ -34,7 +34,7 @@ jobs:
   - name: Lowercase Image Name
     run: |
       # Convertimos el nombre del repo a minúsculas y lo guardamos en IMAGE_NAME
-    echo "IMAGE_NAME=$(echo ghcr.io/${{ github.repository }} | tr '[:upper:]' '[:lower:]')">> $GITHUB_ENV
+      echo "IMAGE_NAME=$(echo ghcr.io/${{ github.repository }} | tr '[:upper:]' '[:lower:]')">> $GITHUB_ENV
   # 6. Construir y Subir Imagen Docker
   - name: Build and push Docker image
     uses: docker/build-push-action@v5
